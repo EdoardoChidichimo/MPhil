@@ -18,9 +18,8 @@ APPROACHES (Discrete [D] and Continuous [C] Estimators):
 
     [D] BINNING
     [D] WEIGHTED SYMBOLIC 
-    [C] GAUSSIAN MODEL
+    [C] GAUSSIAN COPULAS 
     [C] KERNEL-BASED
-    [C] COPULAS 
     [C] k-NEAREST NEIGHBOUR
     
 
