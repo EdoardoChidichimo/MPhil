@@ -1,4 +1,4 @@
 # MPhil
 Computational Social Neuroscience:
-- Implementing Information-Theoretic Metrics (including Mutual Information, Transfer Entropy, and Causal Emergence) into HyPyP.
+- Implementing information-theoretic measures (viz., mutual information, transfer entropy, and causal emergence) into [HyPyP]([url](https://github.com/ppsp-team/HyPyP)https://github.com/ppsp-team/HyPyP).
 - Whole-Brain Simulations 
