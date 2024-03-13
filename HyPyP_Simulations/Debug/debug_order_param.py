@@ -27,7 +27,7 @@ times = arange(0, n_times, 1. / float(sfreq))
 dti = loadmat("connectomes.mat")['cuban']
 dti = (dti - np.min(dti)) / (np.max(dti) - np.min(dti)) 
 w_d = np.array(loadmat("distance.mat")['distance'])
-τ = sfreq * w_d / velocity # lag matrix
+τ = sfreq * w_d / velocity
 
 # Parameters of Interest
 cintra_values = np.linspace(0., 1., 50)
