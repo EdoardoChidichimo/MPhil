@@ -9,7 +9,6 @@ from jitcdde import jitcdde_input, y, t, input
 from symengine import sin
 from chspy import CubicHermiteSpline
 import copy
-import random
 
 
 # Constants
@@ -27,7 +26,7 @@ times = arange(0, n_times, 1. / float(sfreq))
 dti = loadmat("connectomes.mat")['cuban']
 dti = (dti - np.min(dti)) / (np.max(dti) - np.min(dti)) 
 w_d = np.array(loadmat("distance.mat")['distance'])
-τ = sfreq * w_d / velocity
+
 
 # Parameters of interest
 cintra_values = np.linspace(0., 1., 50)
@@ -59,6 +58,7 @@ for freq_std in value_range:
             
             # Intra-brain connectivity matrix
             A = np.array(dti * cintra)
+            τ = sfreq * w_d / velocity
 
             input_data = np.random.normal(size=(len(times), n))
             input_spline = CubicHermiteSpline.from_data(times, input_data)
