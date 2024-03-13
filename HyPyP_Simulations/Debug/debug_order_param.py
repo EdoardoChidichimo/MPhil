@@ -29,7 +29,7 @@ dti = (dti - np.min(dti)) / (np.max(dti) - np.min(dti))
 w_d = np.array(loadmat("distance.mat")['distance'])
 τ = sfreq * w_d / velocity
 
-# Parameters of Interest
+# Parameters of interest
 cintra_values = np.linspace(0., 1., 50)
 value_range = [0.0, 0.5, 1.0]
 results = {}
