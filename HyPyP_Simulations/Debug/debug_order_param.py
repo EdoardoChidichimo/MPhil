@@ -1,4 +1,3 @@
-import sys
 from config import *
 import pickle
 import numpy as np
@@ -10,10 +9,7 @@ from jitcdde import jitcdde_input, y, t, input
 from symengine import sin
 from chspy import CubicHermiteSpline
 import copy
-import matplotlib.pyplot as plt
-from tqdm import tqdm
 import random
-
 
 
 # Constants
@@ -37,13 +33,6 @@ w_d = np.array(loadmat("distance.mat")['distance'])
 cintra_values = np.linspace(0., 1., 50)
 value_range = [0.0, 0.5, 1.0]
 results = {}
-
-# Set up figure plot
-n_conditions = len(value_range)**2 # 9
-grid_size = int(np.ceil(np.sqrt(n_conditions))) # 3 x 3
-fig, axes = plt.subplots(grid_size, grid_size, figsize=(20, 20))
-fig.subplots_adjust(hspace=0.4, wspace=0.4)
-
 
 
 
